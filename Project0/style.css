@@ -1,4 +1,9 @@
-.meio {
+#meio {
+    width: 100px;
+    height: 100px;
+    background: orangered;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
