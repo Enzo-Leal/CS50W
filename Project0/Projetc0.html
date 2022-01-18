@@ -4,10 +4,21 @@
         <title>Google Search</title>
         
         <style>
+            body{
+                background-color: rgb(90, 98, 105);
+            }
+            #Pages{
+                display:inline-flex;
+                float: right;
+            }
+
+            .Pages .images{
+                margin-right: 15px;
+            }
+
+
             #meio {
-                    width: 100vw;
-                    height: 100vh;
-                    background: #001124;
+                   
                     display: flex;
                     flex-direction:column;
                     justify-content: center;
@@ -22,16 +33,30 @@
                 border-radius: 25px;
                 padding: 10px;
                 width: 300px;
+                color: gray;
                 }
+
+            
             
         </style>
     </head>
     <body>
+        <div id="Pages">
+            <div>
+                <a class="images" href="INSERIR PAGINA DE IMAGENS AQUI">Images</a>
+            </div>
+           
+            <div>
+                <a class="Advanced" href="INSERIR PAGINA DE busca avancada AQUI">Advanced search</a>
+            </div>
+
+            
+        </div>
+
         <div id="meio">
-            <img src="/images/Google_logo.png" alt="Google logo" width="400">
+            <a href="//www.google.com">  <img src="/images/Google_logo.png" alt="Google logo" width="300"></a>
             <form action="https://google.com/search">
                 <input type="text" name="q" value="Serch Google or type URL">
-                
             </form>
         </div>
     </body>
