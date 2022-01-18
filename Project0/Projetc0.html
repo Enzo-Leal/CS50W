@@ -6,14 +6,22 @@
         <style>
             body{
                 background-color: rgb(90, 98, 105);
+                font-family: Roboto,RobotoDraft,Arial,sans-serif;
             }
             #Pages{
                 display:inline-flex;
                 float: right;
+                position: absolute;
+                top: 0px;
+                right: 15px;
+                padding-right: 15px;
+
+
+                
             }
 
             .Pages .images{
-                margin-right: 15px;
+                
             }
 
 
@@ -21,8 +29,9 @@
                    
                     display: flex;
                     flex-direction:column;
-                    justify-content: center;
+                    justify-content:center;
                     align-items: center;
+                    margin-top: 150px;
                 }
 
             img {
@@ -32,7 +41,7 @@
             input{
                 border-radius: 25px;
                 padding: 10px;
-                width: 300px;
+                width: 560px;
                 color: gray;
                 }
 
@@ -43,18 +52,18 @@
     <body>
         <div id="Pages">
             <div>
-                <a class="images" href="INSERIR PAGINA DE IMAGENS AQUI">Images</a>
+                <a class="images" href="INSERIR PAGINA DE IMAGENS AQUI" style="padding-right: 15px; text-decoration:none">Images</a>
             </div>
            
             <div>
-                <a class="Advanced" href="INSERIR PAGINA DE busca avancada AQUI">Advanced search</a>
+                <a class="Advanced" href="INSERIR PAGINA DE busca avancada AQUI" style="text-decoration:none">Advanced search</a>
             </div>
 
             
         </div>
 
         <div id="meio">
-            <a href="//www.google.com">  <img src="/images/Google_logo.png" alt="Google logo" width="300"></a>
+            <a href="//www.google.com">  <img src="/images/Google_logo.png" alt="Google logo" width="400"></a>
             <form action="https://google.com/search">
                 <input type="text" name="q" value="Serch Google or type URL">
             </form>
