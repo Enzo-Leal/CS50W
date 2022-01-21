@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <title>Images</title> 
+        <title>Google Search</title>
+        
+        <style>
+            body{
+                background-color: rgb(90, 98, 105);
+                font-family: Roboto,RobotoDraft,Arial,sans-serif;
+                
+            }
+            #Pages{
+                display:inline-flex;
+                float: right;
+                position: absolute;
+                top: 0px;
+                right: 15px;
+                padding-right: 15px;
+                margin-top: 15px;
+                
+
+                
+            }
+
+            #Pages .images :visited{
+                
+                color: green;
+
+            }
+            #Pages .advanced :visited{
+                color: green;
+
+            }
+
+
+            #meio {
+                   
+                    display: flex;
+                    flex-direction:column;
+                    justify-content:center;
+                    align-items: center;
+                    margin-top: 150px;
+                }
+
+            img {
+                margin: 20px;
+            }
+
+            input{
+                border-radius: 25px;
+                padding: 10px;
+                width: 560px;
+                color: gray;
+                }
+
+            
+            
+        </style>
     </head>
-    <body>
-        <a class="Advanced" href="INSERIR PAGINA DE busca avancada AQUI" style="text-decoration:none"><font color=orange></font>Advanced search</a>
-        Hello, world!
-    </body>
+    <body link="white">
+        <div id="Pages">
+            <div>
+                <a class="images" href="Images.html" style="padding-right: 15px; text-decoration:none"><font color=orange></font>Images</a>
+            </div>
+           
+            <div>
+                <a class="Advanced" href="INSERIR PAGINA DE busca avancada AQUI" style="text-decoration:none"><font color=orange></font>Advanced search</a>
+            </div>
+
+            
+        </div>
+
+        <div id="meio">
+            <a href="//www.google.com">  <img src="/images/Google_logo.png" alt="Google logo" width="400"></a>
+            <div class="logo-subtext">
+                <span>images</span>
+            </div>
+            <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q">
+            <input type="hidden" name="tbm" value="isch" />    
+        </form>
+    </div>
+</body>
 </html>
