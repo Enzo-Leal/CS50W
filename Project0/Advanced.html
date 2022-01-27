@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced</title>
+        <style>
+            #Pages{
+                display:inline-flex;
+                float: right;
+                position: absolute;
+                top: 0px;
+                right: 15px;
+                padding-right: 15px;
+                margin-top: 15px;
+                
+            }
+            .separador {
+                border-bottom: solid 1px #d6d6d6;
+                }
+
+            #advanced_search {
+                display:flex;
+                flex-direction: column;
+                margin: 5px,5px,5px,5px;
+                padding: 5px;
+                height: 90%;
+            }
+
+            #advanced_search .especificações input[type=text] {
+
+                width: 40%;
+                padding: 2px 0;
+
+            }
+
+            .especificações{
+                text-align: left;
+                margin: 1rem;
+            }
+            .especificações .descrição{
+                
+                display: inline-block;
+                padding-left: 3rem;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id="Pages">
+            
+            <div>
+                <a class="Google" href="Projetc0.html" style="padding-right: 15px; text-decoration:none"><font color=orange></font>Google Search</a>
+            </div>
+
+            <div>
+                <a class="images" href="Images.html" style="padding-right: 15px; text-decoration:none"><font color=orange></font>Google Images</a>
+            </div>
+                      
+        </div>
+
+        <div id="topo">
+            <a href="//www.google.com">  <img src="/images/Google_logo.png" alt="Google logo" width="110"></a>
+            <h2>Advanced Search</h2>
+        </div>
+        <!-- linha separando o titulo -->
+        <div class="separador"></div>
+        <!-- titulo -->
+        <div id="titulo" style="padding: 25px; display: inline-flex;"> 
+            <p style="margin-right: 46rem;">Find pages with...</p>
+            <p>To do this in the search box.</p>
+        </div>
+        <!-- ESPAÇO DE PESQUISA -->
+        <div id="advanced_search">
+            <div class="especificações">
+                <form action="https://google.com/search" method="get">
+                    <label style="margin-right: 100px;">all these words:</label>
+                    <input type="text" name="as_q">
+                    <div class="descrição">Type the important words: tri-colour rat terrier</div>
+            </div>
+            <div class="especificações">
+                    <label style="margin-right: 35px;">this exact word or phrase:</label>
+                    <input type="text" name="as_epq">
+                    <div class="descrição">Put exact words in quotes: "rat terrier"</div>
+            </div>
+            <div class="especificações">
+                    <label style="margin-right: 76px;">any of these words:</label>
+                    <input type="text" name="as_oq">
+                    <div class="descrição">Type OR between all the words you want: miniature OR standard</div>
+            </div>
+            <div class="especificações">
+                    <label style="margin-right: 68px;">none of these words:</label>
+                    <input type="text" name="as_eq">
+                    <div class="descrição">Put a minus sign just before words that you don't want:<br>
+                         -rodent, -"Jack Russell"</div>
+            </div>
+        
+
+            </form>
+        </div>
+    </body>
+</html>
