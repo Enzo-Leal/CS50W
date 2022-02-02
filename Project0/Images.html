@@ -18,8 +18,6 @@
                 padding-right: 15px;
                 margin-top: 15px;
                 
-
-                
             }
 
             #Pages .images :visited{
@@ -54,21 +52,28 @@
             img {
                 margin: 20px;
             }
+            
 
-            input{
+            .meio .search-field {
+                display: flex;
+                flex-direction: row;
+                border-radius: 25px;
+                border: 1px solid #afafaf;
+                align-items: center;
+                margin: 10px;
+                padding-left: 15px;
+            }
+
+            .meio .search-field input{
+                border: none;
+                border-color: white;                
                 border-radius: 25px;
                 padding: 10px;
                 width: 560px;
-                color: gray;
-                }
-
-            svg{
-                position: relative;
-                left: 35px;
-                top: 7px;
-
+                
             }
 
+            
             
             
         </style>
@@ -94,8 +99,8 @@
             <form action="https://www.google.com/search" method="get">
                 <div class="search-field">
                     <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5" /><path d="m17.571 17.5-5.571-5.5" /></g></svg>
-                    <input type="text" name="q" placeholder="Serch Google or type URL">
-            </div>
+                    <input type="text" name="q">
+                </div>
             <input type="hidden" name="tbm" value="isch" />    
         </form>
     </div>
